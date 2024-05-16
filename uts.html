@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio [Fina Zakiyaturrohmah]</title>
+    <script src="https://fontawesome.com/de8dec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="uts.css">
+</head>
+
+<body>
+    <header>
+        <h5>Portofolio [Fina Zakiyaturrohmah]</h5>
+    </header>
+    <nav class="navbar">
+        <div class="porto">
+            <h2>Portofo<span>lio</span></h2>
+        </div>
+        <a href="#home" onclick="showSection('home')">Home</a>
+        <a href="#about" onclick="showSection('about')">About Me</a>
+        <a href="#portofolio" onclick="showSection('portofolio')">Portofolio</a>
+        <a href="#contacts" onclick="showSection('contacts')">Contacts</a>
+    </nav>
+
+    <div class="home" id="home">
+        <div class="image">
+            <img src="satu.jpg">
+        </div>
+        <div class="content">
+            <h4>Hello, My Name Is</h4>
+            <h1>Fina <span>Zakiyaturrohmah</span></h1>
+            <h3>I'am a student at Nahdlatul Ulama Islamic University Jepara</h3>
+        </div>
+    </div>
+
+    <section class="about" id="about">
+        <div class="about-me">
+            <img src="dua.jpg">
+            <div class="about-text">
+                <h2>About <span>Me</span></h2>
+                <h5>Nama : <span> Fina Zakiyaturrohmah</span></h5>
+                <p><span>Nim : </span>[221250000451]</p>
+                <p>Program Studi : <span>Sistem Informasi</span></p>
+                <p><span>Fakultas Sains</span> Dan Teknologi</p>
+                <a href="#" class="button">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="Portofolio" id="portofolio">
+        <div class="title">
+            <h2>Portofo<span>lio</span></h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <h5><span>Matakuliah Semester 1</span></h5>
+                <div class="pra">
+                    <p>Dasar Infrastruktur Teknologi Informasi</p>
+                    <p>Dasar-Dasar Sistem Informasi</p>
+                    <p>Matematika Diskrit</p>
+                    <p>Data Science For Business</p>
+                    <p>Pengantar Bisnis dan Manajemen</p>
+                    <p>Dasar-Dasar Pemrograman</p>
+                    <p>Aplikasi Komputer Bisnis</p>
+                    <p>Pancasila</p>
+                    <p>Bahasa Inggris</p>
+                </div>
+            </div>
+            <div class="card">
+                <h5><span>Matakuliah Semester 2</span></h5>
+                <div class="pra">
+                    <p>Aljabar Linier</p>
+                    <p>Basis Data</p>
+                    <p>Teknologi Platform</p>
+                    <p>Struktur Data</p>
+                    <p>Jaringan dan Komunikasi Data</p>
+                    <p>Desain Grafis</p>
+                    <p>Kewarganegaraan</p>
+                    <p>Ke-NU-an</p>
+                    <p>Bahasa Indonesia</p>
+                </div>
+            </div>
+            <div class="card">
+                <h5><span>Matakuliah Semester 3</span></h5>
+                <div class="pra">
+                    <p>Bahasa Inggris Bisnis</p>
+                    <p>Keamanan Sistem Informasi</p>
+                    <p>Sistem Informasi Manajemen</p>
+                    <p>Proses Bisnis</p>
+                    <p>Statistika</p>
+                    <p>Pemrograman Basis Data</p>
+                    <p>Pemrograman Terstruktur</p>
+                    <p>Ahlussunah wa al Jama'ah</p>
+                    <p> Akhlaq</p>
+                </div>
+            </div>
+            <div class="card">
+                <h5><span>Matakuliah Semester 4</span></h5>
+                <div class="pra">
+                    <p>Pemrograman Web</p>
+                    <p>Kewirausahaan</p>
+                    <p>Studi Al Quran dan Al Hadits</p>
+                    <p>Sistem Pendukung Keputusan</p>
+                    <p>Interaksi Manusia dan Komputer</p>
+                    <p>E-commerce</p>
+                    <p>Analisis dan Perancangan Sistem</p>
+                    <p>Ahlussunah wa al Jama'ah</p>
+                    <p>Bisnis Intelligence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-me" id="contacts">
+        <div class="contact-text">
+            <h2>cont<span>acts</span></h2>
+            <div class="contact-box">
+                <div class="contact">
+                    <h5>Address</h5>
+                    <img src="address.png">
+                    <p>Bangsri Jepara</p>
+                </div>
+                <div class="contact">
+                    <h5>Email</h5>
+                    <img src="email.png">
+                    <p>finazakiya372@gmail.com</p>
+                </div>
+                <div class="contact">
+                    <h5>Telp.</h5>
+                    <img src="telp.png">
+                    <p>085799798560</p>
+                </div>
+                <div class="contact">
+                    <h5>WhatsApp</h5>
+                    <img src="whatsapp.png">
+                    <p>+6285799798560</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // sembunyikan semua bagian terlebih dahulu
+        document.querySelectorAll('section').forEach(function(section) {
+            section.style.display = 'none';
+        });
+
+        // tampilkan bagian yang dipilih
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                if (section.id === sectionId) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+    <footer>
+        <div class="footer-text">
+            <p>&copy; FINA ZAKIYATURROHMAH</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
